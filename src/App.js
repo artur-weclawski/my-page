@@ -1,5 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import { useEffect } from 'react';
+useEffect(()=>{
+  document.title="Portfolio"
+},[]);
 function App() {
   return (
     <div className="App">
@@ -7,11 +11,11 @@ function App() {
       <body>
     <div class='navbar'>
       <div  class='navbar-icon'>
-      <a href='/home'><i class="gg-terminal"></i></a>
+      <a href='/my-page'><i class="gg-terminal"></i></a>
       </div>
-      <a href='/home' class='left-a active'><p class='navbar-gt'>&gt;</p>Home</a>
-      <a href='/projects' class='middle-a'><p class='navbar-gt'>&gt;</p>Projects</a>
-      <a href='/contact' class='right-a'><p class='navbar-gt'>&gt;</p>Contact</a>
+      <a href='/my-page' class='left-a active'><p class='navbar-gt'>&gt;</p>Home</a>
+      <a href='/my-page' class='middle-a'><p class='navbar-gt'>&gt;</p>Projects</a>
+      <a href='/my-page' class='right-a'><p class='navbar-gt'>&gt;</p>Contact</a>
     </div>
     <div class='content'>
       <div class='content-box'>
