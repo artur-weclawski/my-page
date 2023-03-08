@@ -1,9 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 import { useEffect } from 'react';
-useEffect(()=>{
-  document.title="Portfolio"
-},[]);
 function App() {
   return (
     <div className="App">
