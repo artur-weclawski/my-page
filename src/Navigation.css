@@ -1,0 +1,134 @@
+.navbar {
+    background: #000;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    display: flex;
+  }
+  
+  .navbar > a{
+    z-index: 0;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 30%;
+    text-decoration: none;
+    height: 100%;
+    font-family: 'Bungee Hairline';
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: xx-large;
+    text-shadow: 0px 0px 20px #200d1b;
+  }
+  .navbar-gt{
+    font-family: 'Righteous';
+    transform: scale(0.8,1);
+  }
+  .home-a{
+    margin-left: 50%;
+  }
+  .project-a{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .gg-terminal{
+    color:white;
+    transform: scale(3);
+    box-shadow: inset 0px -5px 25px 15px #200d1b, 0 0px 5px 2px #200d1b;
+  }
+  .navbar > a:hover{
+    z-index: 2;
+    box-shadow: inset 0px -5px 25px 5px #200d1b, 0 5px 25px 5px #200d1b;
+    text-shadow: 0px 0px 20px #ce54ad;
+    
+    }
+   
+    .middle-a:hover .navbar-gt{
+     transform:rotate(90deg);
+    }
+   .navbar > .navbar-icon{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     width: 30%;
+     text-decoration: none;
+     height: 100%;
+   }
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    transform: scale(3);
+    margin-top: 1.5rem;
+    margin-right: 2rem;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* color: white; */
+    /* width: 30%; */
+    /* text-decoration: none; */
+    /* height: 100%; */
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    display: none;
+    position: relative;
+    margin-left: auto;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.164);
+    width: 20vh;
+    height: 100vh;
+    top: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  /* .dropdown:hover .dropdown-content {display: block;} */
+  nav .show{
+    display: block;
+  }
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    /* background-color: #3e8e41; */
+    color: transparent;
+  }
+  @media only screen and (max-width:1080px){
+    .dropdown{
+        display: inline-block;
+      }
+      .home-a{
+        display: none;
+      }
+      .project-a{
+        display: none;
+      }
+    
+}

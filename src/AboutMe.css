@@ -1,0 +1,36 @@
+.content-about-me{
+    color: white;
+    margin-left: 250px;
+    margin-right: auto;
+    width: 35%;
+    justify-content: right;
+  }
+  
+  .content-about-me h1{
+    font-family: 'Bungee Hairline';
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 2rem;
+    
+  }
+  
+  .content-about-me h2 {
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 1.2rem;
+  }
+
+  @media only screen and(min-width: 1080){
+    .content-about-me{
+        margin-top: 50px;
+        margin-left: auto;
+      }
+      .content-box{
+        margin-top: 50px;
+        margin-left: 0px;
+      }
+      .content-about-me>*{
+        width: 1155;
+        text-align: justify;
+      }
+  }

@@ -1,29 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
 import { useEffect } from 'react';
+import Navigation from './Navigation';
+import Banner from './Banner';
+import AboutMe from './AboutMe';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+      </header>
       <body>
-    <div class='navbar'>
-      <div  class='navbar-icon'>
-      <a href='/my-page'><i class="gg-terminal"></i></a>
-      </div>
-      <a href='/my-page' class='left-a active'><p class='navbar-gt'>&gt;</p>Home</a>
-      <a href='/my-page' class='middle-a'><p class='navbar-gt'>&gt;</p>Projects</a>
-      <a href='/my-page' class='right-a'><p class='navbar-gt'>&gt;</p>Contact</a>
+    <Navigation />
+    <div className='content'>
+      <Banner />
+      <AboutMe />
     </div>
-    <div class='content'>
-      <div class='content-box'>
-        <h1 class='neonText'>&gt;HELLO</h1>
-      </div>
-      <div class='content-about-me'>
-        <h1>I'm Artur,</h1>
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
-      </div>
-    </div>
-    <div class = 'content-2' hidden>
+    <div className= 'content-2' hidden>
     <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
     <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
     <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
@@ -36,7 +28,6 @@ function App() {
     </footer>
 
   </body>
-      </header>
     </div>
   );
 }
