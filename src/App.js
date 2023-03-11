@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { useEffect } from 'react';
-import Navigation from './Navigation';
+import NavBar from './NavBar';
 import Banner from './Banner';
 import AboutMe from './AboutMe';
 function App() {
@@ -10,7 +9,7 @@ function App() {
       <header className="App-header">
       </header>
       <body>
-    <Navigation />
+    <NavBar />
     <div className='content'>
       <Banner />
       <AboutMe />

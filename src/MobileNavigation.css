@@ -1,12 +1,36 @@
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/menu.css');
 @import url('https://fonts.googleapis.com/css?family=Bungee+Hairline&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
 
-.Navigation nav ul li {
+.MobileNavigation {
+    background: #000;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    display: flex;
+}
+.MobileNavigation > .MobileNavigation-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 10%;
+  text-decoration: none;
+  height: 100%;
+}
+.MobileNavigation ul{
+  width: auto;
+}
+.MobileNavigation ul li {
   display: inline-block;
   height: 100%;
 }
 
-.Navigation nav ul li a{
+.MobileNavigation ul li a{
   display: flex;
   background-color: #000;
   justify-content: center;
@@ -22,19 +46,18 @@
   text-shadow: 0px 0px 20px #200d1b;
 }
 
-.Navigation a:hover{
+.MobileNavigation a:hover{
   box-shadow: inset 0px -5px 25px 5px #200d1b, 0 5px 25px 5px #200d1b;
   text-shadow: 0px 0px 20px #ce54ad;
 }
 
-.Navigation p{
+.MobileNavigation p{
   font-family: 'Righteous';
   font-weight: 100;
   transform: scale(1.1, 1.2);
 }
 
-.gg-terminal{
+.gg-menu{
   color:white;
   transform: scale(3);
-  box-shadow: inset 0px -5px 25px 15px #200d1b, 0 0px 5px 2px #200d1b;
 }

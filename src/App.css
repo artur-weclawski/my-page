@@ -1,5 +1,5 @@
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/terminal.css');
-@import url('https://fonts.googleapis.com/css?family=Bungee+Hairline&display=swap');
+
 @import url('https://fonts.googleapis.com/css?family=Lexend+Mega&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/menu.css');
@@ -10,13 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-
 }
-
-/* a.active{
-  z-index: 1;
-    box-shadow: inset 0px -5px 25px 5px #200d1b, 0 5px 25px 5px #200d1b;
-} */
 
 footer{
   width: 100%;
@@ -41,32 +35,11 @@ footer{
 
 }
 
-
-
 .content p{
   display: flex;
   color: white;
   font-size:large;
 }
-
-
-
-
-/* @media only screen and (max-width:1080){
-  .dropdown{
-    display: inline-block;
-  }
-  .home-a{
-    display: none;
-  }
-  .project-a{
-    display: none;
-  }
-} */
-
-
-
-
 
 @media only screen and (max-width:1080px){
   .content{
@@ -75,5 +48,4 @@ footer{
     margin-left: auto;
     margin-right: auto;
   }  
-  
-  }
+}
