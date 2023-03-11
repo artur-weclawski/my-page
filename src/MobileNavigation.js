@@ -1,5 +1,4 @@
 import NavLinks from "./NavLinks";
-import './MobileNavigation.css';
 import { useState } from "react";
 const MobileNavigation = () => {
 
@@ -7,8 +6,8 @@ const MobileNavigation = () => {
 
     return(
         <div className="MobileNavigation">
-            <div  className='MobileNavigation-icon'>
-                <i className="gg-menu" onClick={() => setOpen(!open)}></i>
+            <div  className='MobileNavigation-icon' onClick={() => setOpen(!open)}>
+                <i className="gg-menu"></i>
             </div>
         {open && <NavLinks />}
         </div>
