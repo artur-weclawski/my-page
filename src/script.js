@@ -13,12 +13,12 @@ function rotateElement(event, element){
     const offsetX = ((x - middleX) / middleX) * 45;
     const offsetY = ((y - middleY) / middleY) * 45;
 
-    // if(x > middleX || y < middleY ){
-    document.documentElement.style.setProperty('--rotateX', offsetY + 'deg');
-    document.documentElement.style.setProperty('--rotateY', -1 * offsetX + 'deg');
-    // }else{
-    //     document.documentElement.style.setProperty('--rotateX', 0 + 'deg');
-    //     document.documentElement.style.setProperty('--rotateY', 0 + 'deg');
-    // }
+    if(window.innerWidth>1080){
+        document.documentElement.style.setProperty('--rotateX', offsetY + 'deg');
+        document.documentElement.style.setProperty('--rotateY', -1 * offsetX + 'deg');
+    }else{
+        document.documentElement.style.setProperty('--rotateX', 0 + 'deg');
+        document.documentElement.style.setProperty('--rotateY', -0 + 'deg');
+    }
 }
 

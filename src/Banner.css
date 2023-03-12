@@ -106,9 +106,14 @@
         box-shadow: none;
     }    
   }
-@media only screen and(min-width:1080){
+@media (max-width: 1080px){
     .content-box{
         margin-top: 50px;
         margin-left: 0px;
       }
+    .content-box{
+		  animation: none;
+      transform: rotateX('0 deg')
+      rotateY('0 deg');
+    }
 }
