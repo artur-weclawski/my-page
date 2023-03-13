@@ -8,24 +8,19 @@ import { SiMaildotru } from "react-icons/si";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      </header>
       <body>
-    <NavBar />
-    <div className='content'>
-      <Banner />
-      <AboutMe />
-    </div>
-    <div className= 'content-2'>
-      <a href="https://github.com/artur-weclawski" target="_blank"><FaGithub className='FaGithub'/></a>
-      <a href="/my-page" target="_blank"><FaLinkedin className='FaLinkedin'/></a>
-      <a href = "mailto: weclawski.artur@gmail.com"><SiMaildotru className='SiMaildotru'/></a>
-    </div> 
-    <footer onClick={()=>navigator.clipboard.writeText("weclawski.artur@gmail.com")}>
-      <p className='footer-gt'>&gt;</p><p>weclawski.artur@gmail.com</p>
-    </footer>
-  </body>
-  a
+        <NavBar />
+        <div className='content'>
+          <Banner />
+          <AboutMe />
+        </div>
+        <div className= 'content-2'>
+          <a href="https://github.com/artur-weclawski" target="_blank"><FaGithub className='FaGithub'/></a>
+          <a href="/my-page" target="_blank"><FaLinkedin className='FaLinkedin'/></a>
+          <a href = "mailto: weclawski.artur@gmail.com"><SiMaildotru className='SiMaildotru'/></a>
+        </div> 
+        <div className="Footer" onClick={()=>navigator.clipboard.writeText("weclawski.artur@gmail.com")}>weclawski.artur@gmail.com</div>
+      </body>
     </div>
   );
 }

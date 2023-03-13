@@ -21,17 +21,34 @@
     font-size: 1.2rem;
   }
 
-  @media only screen and(min-width: 1080){
+  @media (max-width: 1080px){
     .content-about-me{
         margin-top: 50px;
         margin-left: auto;
-      }
-      .content-box{
-        margin-top: 50px;
-        margin-left: 0px;
+        margin-right: auto;
+        height: 360px;
+        width: 720px;
       }
       .content-about-me>*{
-        width: 1155;
         text-align: justify;
       }
+}
+@media only screen and (min-height:1920px) and (max-width:1080px){
+  .content-about-me{
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 720px;
+    width: 920px;
   }
+  .content-about-me>*{
+    text-align: justify;
+  }
+  .content-about-me h1{
+    font-size: 4rem;
+  }
+  
+  .content-about-me h2 {
+    font-size: 2.4rem;
+  }
+}

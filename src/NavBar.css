@@ -95,6 +95,12 @@
     height: 80px;
 }
 
+.NavBar .MobileNavigation ul{
+    background-color: black;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    padding-inline-start: 0px;
+}
 .NavBar .MobileNavigation ul li {
     display: inline-block;
     height: 80px;

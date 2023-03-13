@@ -108,12 +108,21 @@
   }
 @media (max-width: 1080px){
     .content-box{
-        margin-top: 50px;
-        margin-left: 0px;
-      }
-    .content-box{
 		  animation: none;
       transform: rotateX('0 deg')
       rotateY('0 deg');
     }
+}
+
+@media only screen and (min-height:1920px) and (max-width:1080px){
+  .content-box{
+    animation: none;
+    transform: rotateX('0 deg')
+    rotateY('0 deg');
+    width: 520px;
+    height: 360px;
+  }
+  h1.neonText{
+    padding-top: 4.5rem;
+  }
 }
