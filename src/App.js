@@ -21,11 +21,11 @@ function App() {
       <a href="/my-page" target="_blank"><FaLinkedin className='FaLinkedin'/></a>
       <a href = "mailto: weclawski.artur@gmail.com"><SiMaildotru className='SiMaildotru'/></a>
     </div> 
-    <footer>
-      <p>weclawski.artur@gmail.com</p>
+    <footer onClick={()=>navigator.clipboard.writeText("weclawski.artur@gmail.com")}>
+      <p className='footer-gt'>&gt;</p><p>weclawski.artur@gmail.com</p>
     </footer>
-
   </body>
+  a
     </div>
   );
 }
