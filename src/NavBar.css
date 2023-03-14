@@ -145,7 +145,7 @@
     transform: scale(3);
 }
 
-@media (max-width: 1080px){
+@media only screen and (max-width: 1080px){
     .NavBar .Navigation {
         display: none;
     }
