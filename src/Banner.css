@@ -7,10 +7,30 @@
     animation: flicker-box 1s infinite alternate;  
     width: 325px;
     height: 250px;
-    border: 0.7rem solid #fff;
     border-radius: 1rem 1rem 1rem 1rem;
     margin-left: 50px;
-    box-shadow: 
+    
+    position: relative;
+    transform:
+    rotateX(var(--rotateX))
+    rotateY(var(--rotateY));
+}
+#light .content-box{
+  border: 0.7rem solid black;
+  box-shadow: 
+    0 0 4px #200d1b,
+    0 0 11px #200d1b,
+    0 0 19px #200d1b,
+    0 0 40px #fff,
+    0 0 80px #fff,
+    0 0 90px #fff,
+    0 0 100px #fff,
+    0 0 150px #fff;
+}
+
+#dark .content-box{
+  border: 0.7rem solid #fff;
+  box-shadow: 
     0 0 4px #fff,
     0 0 11px #fff,
     0 0 19px #fff,
@@ -19,32 +39,39 @@
     0 0 90px #200d1b,
     0 0 100px #200d1b,
     0 0 150px #200d1b;
-    
-    position: relative;
-    transform:
-    rotateX(var(--rotateX))
-    rotateY(var(--rotateY));
-  }
-  .content-box::before,
-  .content-box::after{
-    content: "";
-    position: absolute;
-    border-radius: inherit;
-  }
-  .neonText {
+  
+}
+.content-box::before, .content-box::after{
+  content: "";
+  position: absolute;
+  border-radius: inherit;
+}
+#light .neonText{
+  color: black;
+  text-shadow:
+    0 0 7px #200d1b,
+    0 0 10px #200d1b,
+    0 0 21px #200d1b,
+    0 0 42px #fff,
+    0 0 82px #fff,
+    0 0 92px #fff,
+    0 0 102px #fff,
+    0 0 151px #fff;
+}
+
+#dark .neonText{
     color: #fff;
     text-shadow:
-        0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px #fff,
-        0 0 42px #200d1b,
-        0 0 82px #200d1b,
-        0 0 92px #200d1b,
-        0 0 102px #200d1b,
-        0 0 151px #200d1b;
-  }
-  
-  h1.neonText{
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #200d1b,
+      0 0 82px #200d1b,
+      0 0 92px #200d1b,
+      0 0 102px #200d1b,
+      0 0 151px #200d1b;
+}
+#dark  h1.neonText{
     font-family: 'Righteous';
     font-weight: 100;
     transform: scale(1,1.6);
@@ -58,7 +85,20 @@
     padding-right: 0.6rem;
     padding-top: 2.4rem;
   }
-  
+#light h1.neonText{
+  font-family: 'Righteous';
+  font-weight: 100;
+  transform: scale(1,1.6);
+  font-variant: small-caps;
+  font-size: 3.5rem;
+  /* animation: flicker-text 1.5s infinite alternate;   */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 0.6rem;
+  padding-top: 2.4rem;
+}
   /* Flickering animation */
   @keyframes flicker-text {
       

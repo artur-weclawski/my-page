@@ -3,12 +3,17 @@
 
 html{
   height: 100%;
-  background-color: rgba(32,13,27,1);
   width: 100%;
+}
+
+#light html{
+  background-color: white;
+}
+#dark html{
+  background-color: rgba(32,13,27,1);
 }
 body {
   margin: 0;
-  background: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,1) 33%, rgba(32,13,27,1) 100%);
   display: flex;
   position: absolute;
   width: 100%;
@@ -22,20 +27,25 @@ body {
 #dark body{
   background: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,1) 33%, rgba(32,13,27,1) 100%);
 }
+
 .Footer{
   width: 100%;
   height: 20px;
   position: absolute;
   display: flex;
-  color: white;
   text-align: center;
   justify-content: center;
   font-family: 'Lucida Console';
   font-weight: bold;
   font-size: large;
-
   bottom: 0;
   cursor: pointer;
+}
+#light .Footer{
+  color: black;
+}
+#dark .Footer{
+  color: white;
 }
 .content{
   display: flex;
@@ -45,8 +55,13 @@ body {
 
 .content p{
   display: flex;
-  color: white;
   font-size:large;
+}
+#light .content p{
+  color: black;
+}
+#dark .content p{
+  color: white;
 }
 .content-2{
   display: flex;
@@ -62,9 +77,16 @@ body {
   height: 80px;
 }
 .FaGithub, .FaLinkedin, .SiMaildotru{
-  color: white;
+
   width: inherit;
   height: inherit;
+}
+
+#light .FaGithub, #light .FaLinkedin, #light .SiMaildotru{
+  color: black;
+}
+#dark .FaGithub, #dark .FaLinkedin, #dark .SiMaildotru{
+  color: white;
 }
 
 @media only screen and (max-width:1080px){
@@ -100,7 +122,6 @@ body {
     height: 20px;
     position: absolute;
     display: flex;
-    color: white;
     text-align: center;
     justify-content: center;
     font-family: 'Lucida Console';

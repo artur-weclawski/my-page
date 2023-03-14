@@ -7,7 +7,7 @@ import { SiMaildotru } from "react-icons/si";
 import { ThemeContext } from './NavLinks';
 import { useContext, useState } from 'react';
 function App(){
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
   return (
     <div className="App" id={theme}>
       <body>

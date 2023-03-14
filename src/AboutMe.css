@@ -1,37 +1,43 @@
 .content-about-me{
-    color: white;
+
     margin-left: 250px;
     margin-right: auto;
     width: 70%;
     height: 400px;
     justify-content: right;
   }
+#light .content-about-me{
+  color: black;
+}
+
+#black .content-about-me{
+  color: white;
+}
+
+.content-about-me h1{
+  font-family: 'Bungee Hairline';
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 2rem;  
+}
   
-  .content-about-me h1{
-    font-family: 'Bungee Hairline';
-    font-weight: bold;
-    font-variant: small-caps;
-    font-size: 2rem;
-    
-  }
-  
-  .content-about-me h2 {
-    font-weight: bold;
-    font-variant: small-caps;
-    font-size: 1.2rem;
-  }
+.content-about-me h2 {
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 1.2rem;
+}
 
 @media only screen and (max-width: 1080px){
-    .content-about-me{
-        margin-top: 50px;
-        margin-left: auto;
-        margin-right: auto;
-        height: 360px;
-        width: 70%;
-      }
-      .content-about-me>*{
-        text-align: justify;
-      }
+  .content-about-me{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 360px;
+    width: 70%;
+  }
+  .content-about-me>*{
+    text-align: justify;
+  }
 }
 @media only screen and (min-height:1920px){
   .content-about-me{
@@ -47,7 +53,6 @@
   .content-about-me h1{
     font-size: 4rem;
   }
-  
   .content-about-me h2 {
     font-size: 2.4rem;
   }
