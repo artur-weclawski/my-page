@@ -1,11 +1,12 @@
 import NavLinks from './NavLinks';
-const Navigation = () =>{
+const Navigation = ({theme, setTheme}) =>{
+
     return(
       <div className='Navigation'>
         <div  className='Navigation-icon'>
           <a href='/my-page'><i className="gg-terminal"></i></a>
         </div>
-        <NavLinks />
+        <NavLinks theme={theme} setTheme={setTheme}/>
       </div>
     );
 }

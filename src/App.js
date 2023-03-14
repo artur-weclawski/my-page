@@ -1,15 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
 import NavBar from './NavBar';
 import Banner from './Banner';
 import AboutMe from './AboutMe';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiMaildotru } from "react-icons/si";
-function App() {
+import { ThemeContext } from './NavLinks';
+import { useContext, useState } from 'react';
+function App(){
+  const [theme, setTheme] = useState("light");
   return (
-    <div className="App">
+    <div className="App" id={theme}>
       <body>
-        <NavBar />
+        <NavBar theme = {theme} setTheme={setTheme}/>
         <div className='content'>
           <Banner />
           <AboutMe />
