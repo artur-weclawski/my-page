@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
 
 html{
-  height: 100%;
+  height: 100vh;
   width: 100%;
 }
 
@@ -13,12 +13,15 @@ html{
   background-color: rgba(32,13,27,1);
 }
 body {
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
   display: flex;
   position: absolute;
   width: 100%;
   flex-direction: column;
-  height: 100%;
+  height: 100vh;
+  /* overflow-y: hidden; */
+  overflow-x: hidden;
 }
 
 #light body{
@@ -38,7 +41,7 @@ body {
   font-family: 'Lucida Console';
   font-weight: bold;
   font-size: large;
-  bottom: 0;
+  bottom: 0px;
   cursor: pointer;
 }
 #light .Footer{
@@ -50,7 +53,7 @@ body {
 .content{
   display: flex;
   margin-top: 160px;
-  height: 560px;
+  height: 540px;
 }
 
 .content p{
@@ -68,7 +71,7 @@ body {
   flex-direction: row;
   width: 100%;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 60px;
 }
 .content-2 a{
   margin-left: auto;
@@ -117,19 +120,6 @@ body {
     width: inherit;
     height: inherit;
   }
-  .Footer{
-    width: 100%;
-    height: 20px;
-    position: absolute;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    font-family: 'Lucida Console';
-    font-weight: bold;
-    font-size: large;
-    bottom: 0;
-    cursor: pointer;
-  }
 }
 
 @media only screen and (min-height:1920px){
@@ -147,7 +137,7 @@ body {
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 80px;
+    margin-top: 75px;
     width: 100%;
     height: 600px;
   }

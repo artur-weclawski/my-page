@@ -1,5 +1,4 @@
 .content-about-me{
-
     margin-left: 250px;
     margin-right: auto;
     width: 70%;
@@ -10,7 +9,7 @@
   color: black;
 }
 
-#black .content-about-me{
+#dark .content-about-me{
   color: white;
 }
 
@@ -44,7 +43,7 @@
     margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
-    height: 720px;
+    height: 700px;
     width: 70%;
   }
   .content-about-me>*{
