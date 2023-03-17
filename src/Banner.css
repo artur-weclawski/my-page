@@ -16,16 +16,17 @@
     rotateY(var(--rotateY));
 }
 #light .content-box{
-  border: 0.7rem solid black;
-  box-shadow: 
-    0 0 4px #200d1b,
-    0 0 11px #200d1b,
-    0 0 19px #200d1b,
+  animation: none;
+  border: 0.7rem solid rgba(155, 92, 72, 1);
+  /* box-shadow: 
+    0 0 4px rgba(155, 92, 72, 1),
+    0 0 11px rgba(155, 92, 72, 1),
+    0 0 19px rgba(155, 92, 72, 1),
     0 0 40px #fff,
     0 0 80px #fff,
     0 0 90px #fff,
     0 0 100px #fff,
-    0 0 150px #fff;
+    0 0 150px #fff; */
 }
 
 #dark .content-box{
@@ -47,16 +48,16 @@
   border-radius: inherit;
 }
 #light .neonText{
-  color: black;
-  text-shadow:
-    0 0 7px #200d1b,
-    0 0 10px #200d1b,
-    0 0 21px #200d1b,
+  color: rgba(155, 92, 72, 1);
+  /* text-shadow:
+    0 0 7px rgba(155, 92, 72, 1),
+    0 0 10px rgba(155, 92, 72, 1),
+    0 0 21px rgba(155, 92, 72, 1),
     0 0 42px #fff,
     0 0 82px #fff,
     0 0 92px #fff,
     0 0 102px #fff,
-    0 0 151px #fff;
+    0 0 151px #fff; */
 }
 
 #dark .neonText{

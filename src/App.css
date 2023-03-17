@@ -20,12 +20,11 @@ body {
   width: 100%;
   flex-direction: column;
   height: 100vh;
-  /* overflow-y: hidden; */
   overflow-x: hidden;
 }
 
 #light body{
-  background: white;
+  background: linear-gradient(rgba(255,255,255,1) 0%, rgba(255, 255, 255, 1) 10%, rgb(129, 123, 91) 100%);
 }
 #dark body{
   background: linear-gradient(rgba(0,0,0,1) 0%, rgba(0,0,0,1) 33%, rgba(32,13,27,1) 100%);
@@ -45,7 +44,7 @@ body {
   cursor: pointer;
 }
 #light .Footer{
-  color: black;
+  color: white;
 }
 #dark .Footer{
   color: white;
@@ -61,7 +60,7 @@ body {
   font-size:large;
 }
 #light .content p{
-  color: black;
+  color: rgb(53, 48, 37);
 }
 #dark .content p{
   color: white;
@@ -80,13 +79,12 @@ body {
   height: 80px;
 }
 .FaGithub, .FaLinkedin, .SiMaildotru{
-
   width: inherit;
   height: inherit;
 }
 
-#light .FaGithub, #light .FaLinkedin, #light .SiMaildotru{
-  color: black;
+#light .FaGithub, #light .FaLinkedin, #light .SiMaildotru {
+  color: rgba(155, 92, 72, 1);
 }
 #dark .FaGithub, #dark .FaLinkedin, #dark .SiMaildotru{
   color: white;
