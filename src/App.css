@@ -41,14 +41,9 @@ body {
   font-size: large;
   bottom: 0px;
   cursor: pointer;
+  color: white;
 }
 
-#light .Footer{
-  color: white;
-}
-#dark .Footer{
-  color: white;
-}
 .content{
   display: flex;
   margin-top: 160px;
@@ -78,15 +73,15 @@ body {
   width: 80px;
   height: 80px;
 }
-.FaGithub, .FaLinkedin, .SiMaildotru{
+.BsGithub, .FaLinkedin, .SiMaildotru, .BsFileEarmarkPerson{
   width: inherit;
   height: inherit;
 }
 
-#light :is(.FaGithub, .FaLinkedin, .SiMaildotru) {
+#light :is(.BsGithub, .FaLinkedin, .SiMaildotru, .BsFileEarmarkPerson) {
   color: rgba(155, 92, 72, 1);
 }
-#dark :is(.FaGithub, .FaLinkedin, .SiMaildotru){
+#dark :is(.BsGithub, .FaLinkedin, .SiMaildotru, .BsFileEarmarkPerson){
   color: white;
 }
 
@@ -114,7 +109,7 @@ body {
     height: 100px;
   }
 
-  .FaGithub, .FaLinkedin, .SiMaildotru{
+  .BsGithub, .FaLinkedin, .SiMaildotru, .BsFileEarmarkPerson{
     width: inherit;
     height: inherit;
   }
