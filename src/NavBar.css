@@ -104,7 +104,7 @@
 #light .NavBar .Navigation a:hover{
     border-bottom: rgba(155, 92, 72, 1) solid;
 }
-#dark.NavBar .Navigation a:hover{
+#dark .NavBar .Navigation a:hover{
     border-bottom: white solid;
     text-shadow: 0px 0px 20px #ce54ad;
 }
