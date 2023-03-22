@@ -6,6 +6,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { SiMaildotru } from "react-icons/si";
 import { BsGithub, BsFileEarmarkPerson} from "react-icons/bs"
 import pdf from "./cv.pdf"
+
 const HomePage = ({theme, setTheme}) => {
     return(
         <body>

@@ -7,10 +7,10 @@ const NavLinks = ({theme, setTheme}) => {
         <nav className="NavLinks">
         <ul>
             <li>
-                <Link to="/my-page"><p>&gt;</p>Home</Link>
+                <Link to="my-page"><p>&gt;</p>Home</Link>
             </li>
             <li>
-                <Link to='/my-page/projects'><p>&gt;</p>Projects</Link>
+                <Link to='projects'><p>&gt;</p>Projects</Link>
             </li>
             <li className="li-Switch">
                 <div className="Switch"><Switch theme={theme} setTheme={setTheme}/></div>
