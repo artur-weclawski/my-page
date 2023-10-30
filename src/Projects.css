@@ -54,8 +54,7 @@
     right: 0;
     width: 5px;
     height: 100%;
-    animation: animate2 16s linear infinite;
-    animation-delay: 4s;
+    animation: animate2 16s linear 4s infinite;
 }
 #light .slide span:nth-child(2){
     background: linear-gradient(180deg, transparent 0%, rgb(206, 160, 145) 33%, rgb(194, 129, 109) 66%, rgb(155, 92, 72) 100%);
@@ -79,8 +78,7 @@
     right: -100%;
     width: 100%;
     height: 5px;
-    animation: animate3 16s linear infinite;
-    animation-delay: 8s;
+    animation: animate3 16s linear 8s infinite;
 }
 #light .slide span:nth-child(3){
     background: linear-gradient(270deg, transparent 0% ,rgb(206, 160, 145) 33%, rgb(194, 129, 109) 66%, rgb(155, 92, 72) 100%);
@@ -100,18 +98,29 @@
 }
 
 .slide span:nth-child(4) {
-    bottom: -100%;
+    bottom: 50%;
     left: 0;
     width: 5px;
     height: 100%;
-    animation: animate4 16s linear infinite;
-    animation-delay: 12s;
+    animation: animate4 16s linear 12s infinite,
+    animate45 12s linear
 }
 #light .slide span:nth-child(4){
     background: linear-gradient(360deg, transparent 0% , rgb(206, 160, 145) 33%, rgb(194, 129, 109) 66%, rgb(155, 92, 72) 100%);
 }
 #dark .slide span:nth-child(4) {
     background: linear-gradient(360deg, transparent 0%, #38172f 33%,#461d3b 66%, #ce54ad 100%);
+}
+@keyframes animate45 {
+    0% {
+        bottom: 0%;
+    }
+
+    
+    50%,
+    100%{
+        bottom: 150%;
+    }
 }
 @keyframes animate4 {
     0% {

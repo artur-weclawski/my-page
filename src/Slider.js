@@ -25,7 +25,7 @@ const Slider = ({ slides }) => {
             <span></span>
             <span></span>
             <span></span>
-            {/* {slides[currentIndex].title} */}
+            {slides[currentIndex].title}
             </div>
             
             <div className="dotsContainer">
