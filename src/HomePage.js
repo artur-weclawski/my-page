@@ -17,7 +17,7 @@ const HomePage = ({theme, setTheme}) => {
         </div>
         <div className= 'content-2'>
           <a href = "https://github.com/artur-weclawski" target="_blank"><BsGithub className='BsGithub'/></a>
-          <a href = "/my-page" target="_blank"><FaLinkedin className='FaLinkedin'/></a>
+          <a href = "https://www.linkedin.com/in/artur-w%C4%99c%C5%82awski-79a6b9297/" target="_blank"><FaLinkedin className='FaLinkedin'/></a>
           <a href = "mailto: weclawski.artur@gmail.com"><SiMaildotru className='SiMaildotru'/></a>
           <a href = {pdf}><BsFileEarmarkPerson className='BsFileEarmarkPerson'/></a>
         </div> 
